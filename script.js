@@ -23,6 +23,7 @@ function hideAnimal(animal) {
 
     if (box && box.classList.contains('visible-animal')) {
         box.classList.remove('visible-animal');
+        btn.classList.remove('reveal-btn-active');
         animalCount--;
         updateCount();
     }

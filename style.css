@@ -61,6 +61,7 @@
 
 .reveal-btn-default {
     background-color: white;
+    border: 1px solid orange;
     border: 1px;
 }
 
