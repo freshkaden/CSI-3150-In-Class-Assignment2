@@ -1,16 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Animal Zoo</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-
-
+<head>
+    <meta charset="UTF-8">
+    <title>Animal Zoo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 
 <body>
-
-    <div class = "main">
+    <div class="main">
         <div class="head-box">
             <h1>Welcome to the Interactive Reveal What's that Animal UI</h1>
         </div>
@@ -20,45 +17,40 @@
         </div>
 
         <div class="animals">
-
             <div class="column">
-                <div id="cat-box" class="result-box hidden animal">
+                <div id="cat-box" class="result-box">
                     <img src="assets/tabby-cat.jpg" alt="photo of cat">
                     <button class="hide-btn" onclick="hideAnimal('cat')">Hide Result</button>
                 </div>
-                <button class="reveal-btn" onclick="revealAnimal('cat')">Reveal a Cat</button>
+                <button class="reveal-btn" onclick="revealAnimal('cat')">Reveal a CAT</button>
             </div>
 
             <div class="column">
-                <div id="dog-box" class="result-box hidden animal">
+                <div id="dog-box" class="result-box">
                     <img src="assets/dog.jpg" alt="photo of dog">
                     <button class="hide-btn" onclick="hideAnimal('dog')">Hide Result</button>
                 </div>
-                <button class="reveal-btn" onclick="revealAnimal('dog')">Reveal a Dog</button>
+                <button class="reveal-btn" onclick="revealAnimal('dog')">Reveal a DOG</button>
             </div>
 
-
             <div class="column">
-                <div id="cow-box" class="result-box hidden animal">
+                <div id="cow-box" class="result-box">
                     <img src="assets/cow.jpg" alt="photo of cow">
                     <button class="hide-btn" onclick="hideAnimal('cow')">Hide Result</button>
                 </div>
-                <button class="reveal-btn" onclick="revealAnimal('cow')">Reveal a Cow</button>
+                <button class="reveal-btn" onclick="revealAnimal('cow')">Reveal a COW</button>
             </div>
-
-
-
-
-
-
-
         </div>
 
+        <div class="foot-control">
+            <button class="reset-btn" onclick="resetZoo()">Reset Zoo</button>
+            <div class="counter-box">
+                <h3 id="count-disp">Animals on screen: 0</h3>
+            </div>
+        </div>
     </div>
 
     <script src="script.js"></script>
-
-
 
 </body>
 </html>
