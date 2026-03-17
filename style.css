@@ -62,13 +62,13 @@
 .reveal-btn-default {
     background-color: white;
     border: 1px solid orange;
-    border: 1px;
+    color: black;
 }
 
 .reveal-btn-active {
     background-color: green;
     color: black;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 .hide-btn {
