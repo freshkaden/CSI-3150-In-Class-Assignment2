@@ -7,10 +7,11 @@ function updateCount() {
 
 function revealAnimal(animal) {
     const box = document.getElementById(`${animal}-box`);
+    const btn = box.nextElementSibling;
 
-    // Check if the box DOES NOT have the visible class
     if (box && !box.classList.contains('visible-animal')) {
         box.classList.add('visible-animal');
+        btn.classList.add('reveal-btn-active');
         animalCount++;
         updateCount();
     }
@@ -18,8 +19,8 @@ function revealAnimal(animal) {
 
 function hideAnimal(animal) {
     const box = document.getElementById(`${animal}-box`);
+    const btn = box.nextElementSibling;
 
-    // FIX: Changed 'visible.animal' to 'visible-animal'
     if (box && box.classList.contains('visible-animal')) {
         box.classList.remove('visible-animal');
         animalCount--;
@@ -28,15 +29,16 @@ function hideAnimal(animal) {
 }
 
 function resetZoo() {
-    // 1. Find all boxes using the result-box class
+
     const allBoxes = document.querySelectorAll('.result-box');
     
-    // 2. Remove the visible class from all of them
+
+    // remove all visible animals
     allBoxes.forEach(box => {
         box.classList.remove('visible-animal');
     });
 
-    // 3. Reset the count and update the UI
+   // reset count
     animalCount = 0;
     updateCount();
 }
