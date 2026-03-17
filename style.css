@@ -1,0 +1,80 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid orange;
+    padding: 20px;
+    margin: 20px;
+    min-height: 500px;
+    text-align:center;
+}
+
+.head-box, .instruction-box {
+    border: 1px solid orange;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.animal-grid{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.result-box {
+    flex: 1;
+    max-width: 30%;
+    border: 1px solid orange;
+    padding: 10px;
+    margin-bottom: 15px;
+    text-align: center;
+    min-height: 250px;
+    box-sizing: border-box;
+}
+
+.result-box img{
+    max-width: 100%;
+    height: 150px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.hidden-animal{
+    display: none;
+    width: 300px;
+    height: auto;
+}
+
+.visible-animal {
+    display: block;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+}
+
+button {
+    border: 1px solid orange;
+    background: white;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.reveal-btn {
+    background-color: green;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.hide-btn {
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    margin-top: auto;
+
+
+}

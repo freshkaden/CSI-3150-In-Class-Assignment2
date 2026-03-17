@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Animal Zoo</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+
+
+<body>
+
+    <div class = "main">
+        <div class="head-box">
+            <h1>Welcome to the Interactive Reveal What's that Animal UI</h1>
+        </div>
+
+        <div class="instruction-box">
+            <p>Click on the buttons below to reveal the animal images</p>
+        </div>
+
+        <div class="animals">
+
+            <div class="column">
+                <div id="cat-box" class="result-box hidden animal">
+                    <img src="assets/tabby-cat.jpg" alt="photo of cat">
+                    <button class="hide-btn" onclick="hideAnimal('cat')">Hide Result</button>
+                </div>
+                <button class="reveal-btn" onclick="revealAnimal('cat')">Reveal a Cat</button>
+            </div>
+
+            <div class="column">
+                <div id="dog-box" class="result-box hidden animal">
+                    <img src="assets/dog.jpg" alt="photo of dog">
+                    <button class="hide-btn" onclick="hideAnimal('dog')">Hide Result</button>
+                </div>
+                <button class="reveal-btn" onclick="revealAnimal('dog')">Reveal a Dog</button>
+            </div>
+
+
+            <div class="column">
+                <div id="cow-box" class="result-box hidden animal">
+                    <img src="assets/cow.jpg" alt="photo of cow">
+                    <button class="hide-btn" onclick="hideAnimal('cow')">Hide Result</button>
+                </div>
+                <button class="reveal-btn" onclick="revealAnimal('cow')">Reveal a Cow</button>
+            </div>
+
+
+
+
+
+
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+
+
+</body>
+</html>
